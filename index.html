@@ -191,10 +191,10 @@ input{
       rasanya kek dunia lagi ngga seberisik biasanya.
     </p>
   </div>
-  <button onclick="scrollNext()">gasss dikit lagii.. </button>
+  <button onclick="scrollDikit()">gasss dikit lagii.. </button>
 </section>
 
-<section>
+<section id="quest">
   <h2 class="fade">Kalo Masi Mao Lanjut...</h2>
   <p class="fade">Berarti penasaran juga ya 😌</p>
   <br>
@@ -239,6 +239,9 @@ function scrollNext(){
 }
 function scrollLagi(){
   document.getElementById("care").scrollIntoView({behavior:"smooth"});
+}
+function scrollDikit(){
+  document.getElementById("quest").scrollIntoView({behavior:"smooth"});
 }
   
 function checkPass(){
