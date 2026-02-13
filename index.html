@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Sherly 🌙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0d0d14;
+  --rose:#ff3e6c;
+  --soft:#ff9bb3;
+  --text:#f4f4f4;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+/* subtle stars */
+body::before{
+  content:"";
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:radial-gradient(#fff 1px, transparent 1px);
+  background-size:60px 60px;
+  opacity:0.04;
+  animation:move 100s linear infinite;
+  z-index:-1;
+}
+
+@keyframes move{
+  from{background-position:0 0;}
+  to{background-position:1200px 1200px;}
+}
+
+section{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:80px 25px;
+  text-align:center;
+}
+
+h1,h2{
+  font-family:'Playfair Display',serif;
+  margin-bottom:20px;
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s ease;
+}
+
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.card{
+  max-width:650px;
+  margin:20px;
+  padding:35px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 25px rgba(255,62,108,0.08);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 40px rgba(255,62,108,0.25);
+}
+
+button{
+  padding:14px 30px;
+  border:none;
+  border-radius:40px;
+  background:var(--rose);
+  color:white;
+  cursor:pointer;
+  transition:0.4s;
+  box-shadow:0 0 20px rgba(255,62,108,0.6);
+}
+
+button:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 35px rgba(255,62,108,0.9);
+}
+
+.glow{
+  color:var(--soft);
+  text-shadow:0 0 15px rgba(255,62,108,0.8);
+}
+
+#surprise{
+  display:none;
+  background:linear-gradient(145deg,#140910,#2b0c18);
+}
+
+input{
+  padding:10px 15px;
+  border-radius:20px;
+  border:none;
+  outline:none;
+  margin-right:10px;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+  <h1 class="fade">Sherly 🌙</h1>
+  <p class="fade">
+    Random banget yaa…  
+    cuma nanya soal nixx filter,  
+    eh malah jadi cerita panjang sampai sekarang.
+  </p>
+  <br>
+  <button onclick="scrollNext()">Lanjut dikit ✨</button>
+</section>
+
+<section id="story">
+  <h2 class="fade">Helens/h2>
+
+  <div class="card fade">
+    <p>
+      “Nixx filter enak ga sih HAHAHA”
+      <br><br>
+      Pertanyaan sesimpel itu.  
+      ngga ada maksud apa-apa.
+    </p>
+  </div>
+
+  <div class="card fade">
+    <p>
+      tapi dari situ ngobrolnya nyambung.  
+      tetawa nggak jelas.  
+      tau-tau nyaman aja.
+    </p>
+  </div>
+
+  <div class="card fade">
+    <p>
+      kadang hal kecil emang nggak kelihatan penting,  
+      tapi ternyata bisa jadi awal sesuatu yang beda.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="fade">Yang Bikin Betah</h2>
+
+  <div class="card fade">
+    <p>
+      kamu tuh santai, tapi care.  
+      ngga ribet, tapi perhatian.
+    </p>
+  </div>
+
+  <div class="card fade">
+    <p>
+      Kadang ngeselin dikit,  
+      tapi justru itu yang bikin nggak bosen.
+    </p>
+  </div>
+
+  <div class="card fade">
+    <p>
+      Dan entah kenapa,  
+      tiap ngobrol sama kamu  
+      rasanya kayak dunia lagi nggak seberisik biasanya.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="fade">Kalau Masih Lanjut...</h2>
+  <p class="fade">Berarti penasaran juga ya 😌</p>
+  <br>
+  <p class="fade">Jawab dulu sebelum lanjut:</p>
+  <small class="fade">Topik pertama kita apa?</small><br><br>
+
+  <div class="fade">
+    <input type="text" id="password" placeholder="ketik di sini">
+    <button onclick="checkPass()">Buka 💗</button>
+  </div>
+</section>
+
+<section id="surprise">
+  <h2 class="glow">Sedikit yang Mau Dibilang</h2>
+
+  <div class="card">
+    <p>
+      ngga pernah nyangka,  
+      dari obrolan receh soal vape  
+      bisa ketemu seseorang yang sekarang rasanya beda.
+
+      bukan cuma buat ketawa.  
+      tapi buat ngilangin cape.  
+      buat ngobrol hal random tengah malam.
+
+      ngga tau nanti bakal sejauh apa.  
+      tapi selama masih bisa jalan bareng,  
+      rasanya cukup.
+
+      Happy Valentine, Sherly.  
+
+      ngga perlu yang ribet.  
+      yang penting tetap ada,  
+      tetap bareng. 🌙💗
+    </p>
+  </div>
+</section>
+
+<script>
+function scrollNext(){
+  document.getElementById("story").scrollIntoView({behavior:"smooth"});
+}
+
+function checkPass(){
+  const input=document.getElementById("password").value.toLowerCase();
+  if(input.includes("nixx")){
+    const s=document.getElementById("surprise");
+    s.style.display="flex";
+    s.scrollIntoView({behavior:"smooth"});
+  }else{
+    alert("Clue kecil: ada hubungannya sama vape 😉");
+  }
+}
+
+const faders=document.querySelectorAll(".fade");
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+faders.forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
