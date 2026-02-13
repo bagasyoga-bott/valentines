@@ -164,10 +164,10 @@ input{
       tapi ternyata bisa jadi awal sesuatu.
     </p>
   </div>
-  <button onclick="scrollNext()">Lanjottt </button>
+  <button onclick="scrollLagi()">Lanjottt </button>
 </section>
 
-<section>
+<section id="care">
   <h2 class="fade">Yang Bikin Betah</h2>
 
   <div class="card fade">
@@ -237,7 +237,10 @@ input{
 function scrollNext(){
   document.getElementById("story").scrollIntoView({behavior:"smooth"});
 }
-
+function scrollLagi(){
+  document.getElementById("care").scrollIntoView({behavior:"smooth"});
+}
+  
 function checkPass(){
   const input=document.getElementById("password").value.toLowerCase();
   if(input.includes("nixx")){
